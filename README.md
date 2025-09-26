@@ -1,16 +1,120 @@
-# meals
+# 🍽️ Meals App
 
-A new Flutter project.
+Un’app Flutter per esplorare ricette, filtrare i pasti in base a preferenze alimentari e gestire una lista di preferiti.  
+Il progetto dimostra l’uso di **Riverpod** per la gestione dello stato, animazioni di base, `Hero` widgets, e la strutturazione modulare del codice.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Funzionalità
 
-A few resources to get you started if this is your first Flutter project:
+- **Categorie di pasti**: esplora piatti suddivisi per tipologia (italiana, asiatica, vegetariana, ecc.).  
+- **Filtri personalizzati**: scegli se visualizzare solo ricette **senza glutine, senza lattosio, vegetariane o vegane**.  
+- **Preferiti**: aggiungi o rimuovi pasti dalla tua lista personale di preferiti.  
+- **Animazioni fluide**:  
+  - transizioni con `Hero` per le immagini,  
+  - `AnimatedSwitcher` per lo stato dei preferiti,  
+  - `SlideTransition` per l’ingresso delle categorie.  
+- **UI moderna**: tema scuro con **Material 3** e font **Google Fonts (Lato)**.  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tecnologie utilizzate
+
+- [Flutter](https://flutter.dev/)
+  
+- [Riverpod](https://riverpod.dev/) — gestione dello stato reattivo
+  
+- [Google Fonts](https://pub.dev/packages/google_fonts)
+  
+- [transparent_image](https://pub.dev/packages/transparent_image)
+  
+
+---
+
+## 📂 Struttura del progetto
+
+lib/
+
+├── main.dart # Entry point con tema e MaterialApp
+├── data/
+
+│ └── dummy_data.dart # Dati fittizi (categorie e pasti)
+
+├── models/
+
+│ ├── category.dart # Modello Categoria
+
+│ └── meal.dart # Modello Meal
+
+├── providers/
+
+│ ├── meals_provider.dart
+
+│ ├── filters_provider.dart
+
+│ └── favorites_provider.dart
+
+├── screens/
+
+│ ├── tabs.dart # Navigazione principale con BottomNavigationBar
+
+│ ├── categories.dart # Griglia categorie
+
+│ ├── meals.dart # Lista pasti
+
+│ ├── meal_details.dart # Dettaglio di un pasto
+
+│ └── filters.dart # Filtri alimentari
+
+└── widgets/
+
+├── main_drawer.dart # Drawer laterale
+
+├── category_grid_item.dart
+
+├── meal_item.dart
+
+├── meal_item_trait.dart
+
+└── ...
+
+---
+
+## Avvio del progetto
+
+1. Clona il repository  
+   ```bash
+   git clone https://github.com/BrambillaMarco/flutter-meals-app.git
+   
+2. Entra nella cartella del progetto
+cd meals-app
+
+3. Installa le dipendenze
+flutter pub get
+
+4. Avvia l’app su un emulatore o dispositivo
+flutter run
+
+---
+
+
+## Cosa ho imparato
+-Durante lo sviluppo di questa app ho acquisito esperienza pratica con:
+
+-gestione dello stato con Riverpod, inclusi StateNotifier e Provider.
+
+-uso di animazioni personalizzate (AnimationController, SlideTransition, RotationTransition).
+
+-uso di animazioni preconfigurate (AnimatedSwitcher, FadeInImage, Hero).
+
+-costruzione di widget riutilizzabili e modulari (CategoryGridItem, MealItem, MealItemTrait).
+
+-implementazione di drawer laterale e navigazione tra schermate con Navigator.
+
+-filtraggio dinamico di dati in base a preferenze utente.
+
+-creazione di interfaccia moderna con tema scuro.
+
+Gestione di liste e griglie in Flutter (ListView.builder, GridView).
+
+Transizioni fluide tra pagine e gestione dello stato dei preferiti con notifiche utente (SnackBar).
