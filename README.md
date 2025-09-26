@@ -74,9 +74,7 @@ lib/
 
 ├── meal_item.dart
 
-├── meal_item_trait.dart
-
-└── ...
+└── meal_item_trait.dart
 
 ---
 
