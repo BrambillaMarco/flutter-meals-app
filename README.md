@@ -36,6 +36,7 @@ Il progetto dimostra l’uso di **Riverpod** per la gestione dello stato, animaz
 lib/
 
 ├── main.dart # Entry point con tema e MaterialApp
+
 ├── data/
 
 │ └── dummy_data.dart # Dati fittizi (categorie e pasti)
@@ -113,6 +114,6 @@ flutter run
 
 -creazione di interfaccia moderna con tema scuro.
 
-Gestione di liste e griglie in Flutter (ListView.builder, GridView).
+-gestione di liste e griglie in Flutter (ListView.builder, GridView).
 
-Transizioni fluide tra pagine e gestione dello stato dei preferiti con notifiche utente (SnackBar).
+-transizioni fluide tra pagine e gestione dello stato dei preferiti con notifiche utente (SnackBar).
