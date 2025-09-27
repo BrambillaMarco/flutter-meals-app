@@ -96,6 +96,15 @@ flutter run
 
 ---
 
+## Screenshots
+
+<img width="1124" height="708" alt="screen-meals-app" src="https://github.com/user-attachments/assets/3446a973-ff8e-4e61-8e87-cda13dfb7227" />
+
+<img width="1047" height="708" alt="screen2-meals-app" src="https://github.com/user-attachments/assets/93648821-d5a2-4c6b-9077-21fd515f7fc4" />
+
+<img width="711" height="737" alt="screen3-meals-app" src="https://github.com/user-attachments/assets/b044b4a7-d4fd-48f2-851f-c592517389a5" />
+
+---
 
 ## Cosa ho imparato
 -Durante lo sviluppo di questa app ho acquisito esperienza pratica con:
